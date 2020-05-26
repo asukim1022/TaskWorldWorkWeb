@@ -1,0 +1,147 @@
+
+.piechart-flatmin {
+position: relative;
+width: 100%;
+}
+.piechart-flatmin .piehole {
+position: absolute;
+width: 91%;
+height: 91%;
+top: 4.5%;
+z-index: 2;
+border-radius: 50%;
+left: 5%;
+overflow: hidden;
+text-align: center; 
+padding: 2em;
+}
+.piehole .piehole-text {
+font-weight: 300;
+display: none;
+position: absolute;
+left: 15%;
+top: 30%;
+width: 70%;
+}
+.piechart-flatmin.m .piehole-text {
+font-size: 70%;
+}
+.piechart-flatmin.s .piehole-text {
+top: 22%;
+font-size: 70%;
+}
+.piechart-flatmin .piehole-text p {
+line-height: 1;
+margin: 0;
+font-weight: 300;
+}
+.piehole-text .flatmin-percentage {
+font-size: 4em;
+}
+.piehole-text .flatmin-percentage:after {
+content: '%';
+font-size: 0.4em;
+vertical-align: top;
+line-height: 1.5;
+}
+.piehole-text .flatmin-value {
+font-size: 1.2em;
+font-weight: 400;
+}
+.piehole-text .flatmin-title {
+font-size: 1.2em;
+font-weight: 400;
+}
+.piechart-flatmin.m .piehole-text .flatmin-title, .piechart-flatmin.m .piehole-text .flatmin-value, .piechart-flatmin.s .piehole-text .flatmin-title, .piechart-flatmin.s .piehole-text .flatmin-value {
+font-size: 1.4em;
+}
+.piechart-flatmin.s .piehole-text .flatmin-percentage {
+font-size: 3em;
+}
+.piechart-flatmin .ratio {
+padding-top: 100%;
+}
+.piechart-flatmin .sector {
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position: absolute;
+pointer-events: none;
+}
+.sector.hover .sector-s {
+border: 0.5em rgba(255,255,255,0.5) solid;
+}
+.sector-f {
+pointer-events: none;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+border-radius: 50%;
+left: 0;
+}
+.sector-s {
+cursor: pointer;
+pointer-events: auto;
+position: absolute;
+border-radius: 50%;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.example {
+width: 90%;
+padding: 1em;
+margin: auto;
+}
+
+
+        .framework-container {
+            width: 100%;
+            margin: 1em auto;
+            text-align: center;
+            margin-top: -2px;
+        }
+        
+        a,
+        a:visited {
+            color: rgb(15, 15, 15);
+            border-bottom: 1px solid rgb(15, 15, 15);
+            text-decoration: none;
+            padding: 0.2em 0em;
+        }
+        
+        a:hover {
+            border-bottom-width: 2px;
+        }
+        
+        a.nostyle,
+        a.nostyle:visited {
+            color: inherit;
+            text-decoration: none;
+            border: 0;
+        }
+        
+        #content {
+            position: relative;
+        }
+        
+        @media(min-width:768px) {
+            #content {
+                margin-left: 8%;
+            }
+        }
+        
+        @media(min-width:920px) {
+            #content {
+                margin-left: 5%;
+            }
+        }
+        
+        @media(min-width:1240px) {
+            #content {
+                margin-left: 4%;
+            }
+        }

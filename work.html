@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>sample</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src='http://tinymce.cachefly.net/4.1/tinymce.min.js'></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+    <div class="menuDivLoad"></div>
+    <div class="rightPanelLoad"></div>
+    <div class="popupLoad"></div>
+
+
+    <!--/////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+    <!--////////////////////////메뉴창////////////////////////-->
+    <!--팝업 메세지-->
+    <div class="popupChat_bg"></div>
+    <div class="popupChat_box">
+        <div class="popupChat_header">
+            <h3>메세지</h3>
+            <img src="images/set.png" alt="">
+            <h4><a href="chat.html">대화창으로 가기</a></h4>
+        </div>
+        <div class="popupChat_list">
+            <img src="images/chat_img.png" alt="">
+            <p>Here's where your'll find all your recent messages.</p>
+        </div>
+    </div>
+
+    <!--팝업 사용자-->
+    <div class="popupTeam_box">
+        <ul>
+            <li>
+                <span>A</span>
+                <div>
+                    <h3>userName</h3>
+                    <h4>팀원 관리, 결제, 설정 그 외 더보기</h4>
+                </div>
+            </li>
+        </ul>
+        <div class="popupTeam_workBtn">
+            <img src="images/projectadd_36.png" alt="">
+            <p>새 워크스페이스 만들기</p>
+        </div>
+    </div>
+    <div class="popupTeam_bg"></div>
+
+    <!--팝업 도움말-->
+    <div class="popupHelp_box">
+        <ul>
+            <li>
+                <p>새소식</p>
+            </li>
+            <li>
+                <p>튜토리얼</p>
+            </li>
+            <li>
+                <p>사용자 가이드</p>
+            </li>
+            <li>
+                <p>위크플로우 팁</p>
+            </li>
+            <li>
+                <p>문의하기</p>
+            </li>
+            <li>
+                <p>리뷰 남기기</p>
+            </li>
+        </ul>
+    </div>
+    <div class="popupHelp_bg"></div>
+
+    <div class="bodyDiv"></div>
+    <div class="menuHiddenWrap"></div>
+    <!--//////////////////////// 상단메뉴 ////////////////////////-->
+    <section class="projectMain_menuTop">
+        <!-- 상단메뉴중 파란색부분 -->
+        <div class="menuTop_1">
+
+            <div class="hiddenMenu">
+                <!-- 2017-07-14 -->
+                <img src="images/ic_menu_white_24dp.png" alt="">
+            </div>
+            <div class="newAddMenu">
+                <!-- 2017-07-14 -->
+                <img src="images/ic_close_white_24dp.png" alt="">
+            </div>
+            <!-- 검색 -->
+            <ul class="menuTop_1_ul">
+                <li class="searchBtn">
+                    <img src="images/search_white.png" alt="">
+                </li>
+                <li class="chatBtn">
+                    <img src="images/chatting.png" alt="">
+                </li>
+                <li class="helpBtn">
+                    <img src="images/customerservice.png" alt="">
+                </li>
+                <!-- 프로젝트 이름 영역 (드롭박스) -->
+                <li class="menuTop_1_li newWorkSpaceOpenBtn">
+                    <p>Func</p>
+                    <img src="images/fold_2.png" alt="">
+                </li>
+
+                <!-- 유저이미지 영역 -->
+                <li class="userProfileOpenBtn">
+                    <img src="images/profile_45.png" alt="">
+                </li>
+            </ul>
+
+            <ul class="menuTop_1_ul_hidden">
+                <li class="searchBtn"><img src="images/search_white.png" alt=""></li>
+                <li class="chatBtn"><img src="images/chatting.png" alt=""></li>
+                <li class="helpBtn"><img src="images/alarm.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--//////////////////////// 좌측메뉴 ////////////////////////-->
+    <secton class="menuLeft_hidden">
+        <div>
+            <p>use name</p>
+            <img class="menuLeft_hidden_arrow" src="images/ic_chevron_right_white_24dp.png" alt="">
+            <img class="menuLeft_hidden_useImg" src="images/profile_45.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <img src="images/home.png" alt="">
+                <p>전체 개요</p>
+            </li>
+            <li>
+                <img src="images/projectlist.png" alt="">
+                <p>프로젝트</p>
+            </li>
+            <li>
+                <img src="images/memberlist.png" alt="">
+                <p>멤버</p>
+            </li>
+            <li>
+                <img src="images/chat.png" alt="">
+                <p>대화</p>
+            </li>
+        </ul>
+    </secton>
+
+    <secton class="menuLeft_hidden_bg">
+    </secton>
+
+    <section class="menuLeft_teamPanel">
+        <img class="menuLeft_teamPanel_closeBtn" src="images/projectdelete.png" alt="">
+        <ul>
+            <li>
+                <span>U</span>
+                <h3>userName</h3>
+                <h4>팀원 관리, 결제, 설정 그 외 더보기...</h4>
+            </li>
+            <li>
+                <span>U</span>
+                <h3>userName</h3>
+                <h4>팀원 관리, 결제, 설정 그 외 더보기...</h4>
+            </li>
+        </ul>
+        <div>
+            <img src="images/projectadd_36.png" alt="">
+            <p>새 워크스페이스 만들기</p>
+        </div>
+    </section>
+
+    <section class="menuLeft_userPanel">
+        <img class="menuLeft_userPanel_closeBtn" src="images/projectdelete.png" alt="">
+        <div class="userBox">
+            <div class="menuLeft_userPanel_profileBox">
+                <img src="images/profile_45.png" alt="">
+                <div>
+                    <span></span>
+                    <h3>userName</h3>
+                    <h4>userNmae@naver.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="settingBox">
+            <ul>
+                <li>
+                    <h3>계정 설정</h3>
+                    <h4>프로필, 이메일, 언어, 타임존 그 외 더보기...</h4>
+                </li>
+                <li>
+                    <h3>알림 설정</h3>
+                    <h4>브라우저와 이메일 알림</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="logoutBox">
+            <p>로그아웃</p>
+        </div>
+    </section>
+    <section class="menuLeft_userPanel_bg"></section>
+
+    <section class="projectMain_menuLeft">
+        <div>
+            <div class="menuLeft_hiddenMenu">
+                <p>Func</p>
+                <img src="images/fold_2.png" alt="">
+            </div>
+
+            <ul class="menuLeft_top">
+                <li class="newAddMenu">
+                    <img src="images/ic_close_white_24dp.png" alt="" title="">
+                    <span>새로 만들기</span>
+                </li>
+
+                <li>
+                    <a href="alarm.html">
+                        <img src="images/alarm.png" alt="" title="알림">
+                        <span>알림</span>
+                    </a>
+                </li>
+
+                <!-- 전체보기 메뉴 -->
+                <li>
+                    <a href="summary_work.html">
+                        <img src="images/home.png" alt="" title="전체개요">
+                        <span>전체 개요</span>
+                    </a>
+                </li>
+                <!-- 전체프로젝트 메뉴 -->
+                <!-- li에 클래스 menuLeft_Select을 주면 선택css적용 -->
+                <li class="menuLeft_Select menuLeft_projectBtn">
+                    <a href="project.html">
+                        <img src="images/projectlist.png" alt="" title="프로젝트">
+                        <span>프로젝트</span>
+                    </a>
+                </li>
+                <!-- 채팅 메뉴 -->
+                <li>
+                    <a href="chat.html">
+                        <img src="images/chatting.png" alt="" title="채팅">
+                        <span>채팅</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menuLeft_bottom">
+                <li class="menuLeft_team">
+                    <p class="bottomPanelOpen">F</p>
+                </li>
+                <li class="menuLeft_partner"><img src="images/profile_45.png" alt=""></li>
+                <li class="menuLeft_partner chat_seclect"><img src="images/profile_45.png" alt=""></li>
+                <!-- 새메세지 -->
+                <li class="menuLeft_newMsg"><img src="images/new_chatting.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--    상단 메뉴 새로추가-->
+    <section class="menuTop_add">
+        <div></div>
+        <ul>
+            <li>
+                <img src="images/list.png" alt="">
+                <p>새 업무</p>
+            </li>
+            <li>
+                <img src="images/project.png" alt="">
+                <p>새 프로젝트</p>
+            </li>
+            <li>
+                <img src="images/comment.png" alt="">
+                <p>새 대화 체널</p>
+            </li>
+            <li>
+                <img src="images/member.png" alt="">
+                <p>멤버 초대하기</p>
+            </li>
+        </ul>
+    </section>
+
+    <!--    검색창-->
+    <section class="menuTop_search">
+        <div class="searchBox_bg"></div>
+        <div class="searchBox">
+            <img src="images/back.png" alt="">
+            <input type="text" placeholder="검색">
+        </div>
+    </section>
+
+
+    <!--//////////////////////// 왼쪽 패널 ////////////////////////-->
+    <div class="projectMain_leftPanelDiv">
+        <div class="projectMain_leftPanelWrap">
+            <div>
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="프로젝트 검색하기">
+            </div>
+
+            <!-- 프로젝트 생성 -->
+            <div class="projectMain_leftPanelBox">
+                <div>
+                    <img src="images/fold.png" alt="">
+                    <p>최근 프로젝트()</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_1" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_1"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_1+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_1:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_2" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_2"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_2+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_2:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="projectMain_leftPanelBox">
+                <div>
+                    <img src="images/fold.png" alt="">
+                    <p></p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_3" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_3"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_3+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_3:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="projectMain_leftPanel_AllProject"></p>
+        </div>
+    </div>
+
+    <div class="leftDiv_Wrap">
+        <div>
+        </div>
+    </div>
+    <a href="project.html">
+        <div class="leftDiv_left">
+
+            <div class="leftDiv_bottom_1"></div>
+            <div class="leftDiv_bottom_2"></div>
+        </div>
+    </a>
+
+
+    <!--////////////////////////메뉴창////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+
+
+
+
+    <!-- 상단메뉴중 흰색부분 -->
+    <div class="menuTop_2 projectWork_menuTop2">
+
+        <!-- 업무, 타임라인, 분석, 파일 -->
+        <div class="projectWork_menuTop2_wrap">
+            <div class="projectWork_menuTop2_leftBox">
+                <a href="project.html">
+                    <div class="projectWork_menuTop2_backBtn">
+                        <img src="images/back.png" alt="">
+                    </div>
+                </a>
+
+                <div class="projectWork_menuTop2_checkBox">
+                    <input type='checkbox' class="projectWork_menuTop2_CheckBox_input" id="projectMain_leftPanel_bookmark_1" />
+                    <label class="projectWork_menuTop2_CheckBox_inputLable" for="projectMain_leftPanel_bookmark_1"></label>
+                    <style>
+                        input[type=checkbox]#projectMain_leftPanel_bookmark_1+label {
+							background: url(images/bookmark_off.png);
+						}
+						
+						input[type=checkbox]#projectMain_leftPanel_bookmark_1:checked+label {
+							background: url(images/bookmark_on.png);
+						}
+					</style>
+                </div>
+
+                <div class="projectWork_menuTop2_NameBox">
+                    <img src="images/public.png" alt="">
+                    <input type="text" value="test">
+                </div>
+            </div>
+
+            <div class="projectWork_menuTop2_conterBox">
+                <ul>
+                    <li>
+                        <a href="work.html">
+                            <p class="currentSelect_text">업무</p>
+                            <span class="currentSelect_line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analysis.html">
+                            <p>분석</p>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="file.html">
+                            <p>파일</p>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="projectWork_menuTop2_rightBox">
+                <div class="rightPanelChatBtn">
+                    <img src="images/unpublic.png" alt="">
+                    <p>프로젝트 채팅</p>
+                </div>
+                <div>
+                    <img src="images/member.png" alt="">
+                    <p>3</p>
+                </div>
+                <div class="setBtn_rightP">
+                    <img src="images/set.png" alt="">
+                    <p>설정</p>
+                </div>
+                <div class="hiddenMenuSet">
+                    <img src="images/ic_menu_black_24dp.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--//////////////////////// 업무메인 상단메뉴 ////////////////////////-->
+    <section class="projectWork_topMenu">
+        <div class="projectWork_menuTop_bottomBox">
+            <div class="projectWork_menuTop_bottomBox_projectSort">
+                <select name="" id="workMain_projectSort">
+                    <option value="">전체</option>
+                    <option value="">나에게 배정된 업무</option>
+                    <option value="">내가 작성한 업무</option>
+                    <option value="">팔로우 중</option>
+                </select>
+            </div>
+            <div class="projectWork_contentTop_search">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="업무 검색하기">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="projectWork_section">
+        <div class="projectWork_sectionWrap">
+            <div class="projectWork_sectionWrapDiv">
+
+                <div class="projectScrollWrap">
+                    <ul class="projectWork_sectionUl workParent_Ul">
+                        <!--////////// 프로젝트 생성 //////////-->
+                        <li class="workParent_UlWrap">
+                            <div class="workParent_UlWrap_ul">
+
+                                <!-- div : work_header 삭제 -->
+                                <div class="projectWork_Header">
+                                    <!-- work_parent_Li 밖으로 이동 -->
+                                    <div class="projectWork_Header_Name">
+                                        <input type="text" name="name" value="@Model.title" />
+                                        <div class="projectWork_NameHeader_AddBtn">
+                                            <img src="images/projectadd_36_on.png" alt="">
+                                        </div>
+                                        <div class="projectWork_NameHeader_SetBtn">
+                                            <img src="images/ic_more_vert_white_24dp.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="projectWork_Header_newWorkBox">
+                                        <input type="text" placeholder="새 업무 타이틀">
+                                        <img src="images/member.png" class="addMemberBtn_newProject" alt="">
+                                        <img src="images/tag.png" alt="">
+                                        <img src="images/calender.png" class="dateOpenBtn" alt="">
+                                        <div>
+                                            <span class="newWork_cancelBtn">취소</span>
+                                            <span class="newWork_cancelBtn">만들기</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projectWork_Header_inforText">
+                                        <p>1개 업무에 작업 시간이 기록됨</p>
+                                        <span>00시간 00분</span>
+                                    </div>
+                                </div>
+
+                                <div class="ui-state-default work_parent_Li">
+
+                                    <ul class="connectedSortable sortable1 work_childUl">
+                                        <li class="ui-state-default work_childLi" style="background-color:#4882ab;">
+                                            <div class="work_colorWrap">
+                                                <!-- 평가 포인트 -->
+                                                <div class="projectWorkDiv__pointBox projectWorkDiv__conBox">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- 업무 타이틀 -->
+                                                <div class="projectWorkDiv__titleBox projectWorkDiv__conBox">
+                                                    <label class="control control--checkbox">
+                                                        <input type="checkbox" />
+                                                        <div class="control__indicator"></div>
+                                                    </label>
+                                                    <p>디자인 시안 완료 후 최종 승인 받기</p>
+                                                </div>
+
+                                                <!-- 체크리스트 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__checkListBox">
+                                                    <ul>
+                                                        <li>
+                                                            <label class="control control--checkbox">
+                                                                <input type="checkbox" class="chkListChkbox" checked />
+                                                                <div class="control__indicator"></div>
+                                                            </label>
+                                                            <p>title</p>
+                                                        </li>
+                                                        <li>
+                                                            <label class="control control--checkbox">
+                                                                <input type="checkbox" class="chkListChkbox" checked />
+                                                                <div class="control__indicator"></div>
+                                                            </label>
+                                                            <p>title</p>
+                                                        </li>
+                                                        <li>
+                                                            <label class="control control--checkbox">
+                                                                <input type="checkbox" class="chkListChkbox" />
+                                                                <div class="control__indicator"></div>
+                                                            </label>
+                                                            <p>title</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- 태그 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__tagBox">
+                                                    <span style="background-color:#a876cc">목표</span>
+                                                    <span style="background-color:#4882ab">디자인</span>
+                                                    <span style="background-color:#62c276">and-another-in-a-different-color</span>
+                                                </div>
+
+                                                <!-- 작업날짜 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__dateBox">
+                                                    <img src="images/calender.png" alt="">
+                                                    <p>11월 5일</p>
+                                                </div>
+
+                                                <!-- 패널탭버튼 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__panelTabBox">
+                                                    <div class="attributeBtn">
+                                                        <img src="images/list.png" alt="">
+                                                        <span>123</span>
+                                                        <!-- 체크 항목 수 -->
+                                                    </div>
+                                                    <div class="commentBtn">
+                                                        <img src="images/comment.png" alt="">
+                                                        <span>0</span>
+                                                        <!-- 코멘트 수 -->
+                                                    </div>
+                                                    <div class="fileBtn">
+                                                        <img src="images/file.png" alt="">
+                                                        <span>design</span>
+                                                        <!-- 업로드 파일 수 -->
+                                                    </div>
+                                                </div>
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__timeBox">
+                                                    <img src="images/time.png" alt="">
+                                                    <span>11시간 06분</span>
+
+                                                    <ul>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/99/2f/1c/992f1ce8357015832eda62fdebae5d6f.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/66/88/cd/6688cd30d9e6a7b288d0453339ac16a9.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/4c/59/2e/4c592ee92cd096f9051406aa0bf8e5f6.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/cd/87/43/cd8743d9d21e5a0dcb800184c8555b10.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- 사진첨부 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__fileBox">
+                                                    <img class="imagePopupBtn" src="images/bg_desert.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="workParent_UlWrap" style="padding-top: 105px;">
+                            <div class="workParent_UlWrap_ul">
+
+                                <div class="projectWork_Header">
+                                    <div class="projectWork_Header_Name">
+
+                                        <input type="text" name="name" value="@Model.title" />
+                                        <div class="projectWork_NameHeader_AddBtn">
+                                            <img src="images/projectadd_36_on.png" alt="">
+                                        </div>
+                                        <div class="projectWork_NameHeader_SetBtn">
+                                            <img src="images/ic_more_vert_white_24dp.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="projectWork_Header_newWorkBox">
+                                        <input type="text" placeholder="새 업무 타이틀">
+                                        <img src="images/member.png" class="addMemberBtn_newProject" alt="">
+                                        <img src="images/tag.png" alt="">
+                                        <img src="images/calender.png" class="dateOpenBtn" alt="">
+                                        <div>
+                                            <span class="newWork_cancelBtn">취소</span>
+                                            <span class="newWork_cancelBtn">만들기</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projectWork_Header_inforText">
+                                        <p>1/3개 업무에 포인트가 있음</p>
+                                        <span>3포인트</span>
+                                    </div>
+
+                                    <div class="projectWork_Header_inforText">
+                                        <p>1/3개 업무에 포인트가 있음</p>
+                                        <span>3포인트</span>
+                                    </div>
+                                </div>
+
+                                <div class="ui-state-default work_parent_Li">
+                                    <ul class="connectedSortable sortable1 work_childUl">
+                                        <li class="ui-state-default work_childLi" style="background-color:#ffb024;">
+                                            <div class="work_colorWrap">
+                                                <!-- 평가 포인트 -->
+                                                <div class="projectWorkDiv__pointBox projectWorkDiv__conBox">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- 업무 타이틀 -->
+                                                <div class="projectWorkDiv__titleBox projectWorkDiv__conBox">
+                                                    <label class="control control--checkbox">
+                                                        <input type="checkbox" />
+                                                        <div class="control__indicator"></div>
+                                                    </label>
+                                                    <p>일정보고 후 승인</p>
+                                                </div>
+
+                                                <!-- 체크리스트 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__checkListBox">
+                                                    <ul>
+                                                        <li>
+                                                            <label class="control control--checkbox">
+                                                                <input type="checkbox" class="chkListChkbox" checked />
+                                                                <div class="control__indicator"></div>
+                                                            </label>
+                                                            <p>title</p>
+                                                        </li>
+                                                        <li>
+                                                            <label class="control control--checkbox">
+                                                                <input type="checkbox" class="chkListChkbox" />
+                                                                <div class="control__indicator"></div>
+                                                            </label>
+                                                            <p>title</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+
+                                        <li class="ui-state-default work_childLi" style="background-color:#62c276;">
+                                            <div class="work_colorWrap">
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__timeBox">
+                                                    <img src="images/time.png" alt="">
+                                                    <span>01시간 00분</span>
+
+                                                    <ul>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/cd/87/43/cd8743d9d21e5a0dcb800184c8555b10.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- 사진첨부 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__fileBox">
+                                                    <img class="imagePopupBtn" src="https://www.w3schools.com/css/trolltunga.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="ui-state-default work_childLi" style="background-color:#4882ab;">
+                                            <div class="work_colorWrap">
+                                                <!-- 평가 포인트 -->
+                                                <div class="projectWorkDiv__pointBox projectWorkDiv__conBox">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- 업무 타이틀 -->
+                                                <div class="projectWorkDiv__titleBox projectWorkDiv__conBox">
+                                                    <label class="control control--checkbox">
+                                                        <input type="checkbox" />
+                                                        <div class="control__indicator"></div>
+                                                    </label>
+                                                    <p>@taskItem.title</p>
+                                                </div>
+
+                                                <!-- 태그 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__tagBox">
+                                                    <span style="background-color: #62c276">review</span>
+                                                    <span style="background-color: #ffb024">this-is-a-tag</span>
+                                                    <span style="background-color: #a0744c">follow-up</span>
+                                                    <span style="background-color: #e95e51">priority</span>
+                                                    <span style="background-color: #62c276">this-is-another-tag</span>
+                                                </div>
+
+                                                <!-- 작업날짜 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__dateBox">
+                                                    <img src="images/calender.png" alt="">
+                                                    <p>마감일 3일 지남</p>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="workParent_UlWrap">
+                            <div class="workParent_UlWrap_ul">
+
+                                <div class="projectWork_Header">
+                                    <div class="projectWork_Header_Name">
+
+                                        <input type="text" name="name" value="@Model.title" />
+                                        <div class="projectWork_NameHeader_AddBtn">
+                                            <img src="images/projectadd_36_on.png" alt="">
+                                        </div>
+                                        <div class="projectWork_NameHeader_SetBtn">
+                                            <img src="images/ic_more_vert_white_24dp.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="projectWork_Header_newWorkBox">
+                                        <input type="text" placeholder="새 업무 타이틀">
+                                        <img src="images/member.png" class="addMemberBtn_newProject" alt="">
+                                        <img src="images/tag.png" alt="">
+                                        <img src="images/calender.png" class="dateOpenBtn" alt="">
+                                        <div>
+                                            <span class="newWork_cancelBtn">취소</span>
+                                            <span class="newWork_cancelBtn">만들기</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projectWork_Header_inforText">
+                                        <p>1/3개 업무에 포인트가 있음</p>
+                                        <span>3포인트</span>
+                                    </div>
+                                </div>
+
+                                <div class="ui-state-default work_parent_Li">
+                                    <ul class="connectedSortable sortable1 work_childUl">
+                                        <li class="ui-state-default work_childLi" style="background-color:#a876cc;">
+                                            <div class="work_colorWrap">
+                                                <!-- 평가 포인트 -->
+                                                <div class="projectWorkDiv__pointBox projectWorkDiv__conBox">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!-- 업무 타이틀 -->
+                                                <div class="projectWorkDiv__titleBox projectWorkDiv__conBox">
+                                                    <label class="control control--checkbox">
+                                                        <input type="checkbox" />
+                                                        <div class="control__indicator"></div>
+                                                    </label>
+                                                    <p>기획 제안서 검토받기</p>
+                                                </div>
+
+                                                <!-- 태그 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__tagBox">
+                                                    <span style="background-color: #62c276">review</span>
+                                                    <span style="background-color: #a0744c">this-is-a-tag</span>
+                                                    <span style="background-color: #62c276">important</span>
+                                                </div>
+
+                                                <!-- 작업날짜 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__dateBox">
+                                                    <img src="images/calender.png" alt="">
+                                                    <p>마감일 3일 지남</p>
+                                                </div>
+
+                                                <!-- 패널탭버튼 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__panelTabBox">
+                                                    <div class="attributeBtn">
+                                                        <img src="images/list.png" alt="">
+                                                        <span>123</span>
+                                                        <!-- 체크 항목 수 -->
+                                                    </div>
+                                                    <div class="commentBtn">
+                                                        <img src="images/comment.png" alt="">
+                                                        <span>0</span>
+                                                        <!-- 코멘트 수 -->
+                                                    </div>
+                                                    <div class="fileBtn">
+                                                        <img src="images/file.png" alt="">
+                                                        <span>design</span>
+                                                        <!-- 업로드 파일 수 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="workParent_UlWrap">
+                            <div class="workParent_UlWrap_ul">
+
+                                <div class="projectWork_Header">
+                                    <div class="projectWork_Header_Name">
+
+                                        <input type="text" name="name" value="@Model.title" />
+                                        <div class="projectWork_NameHeader_AddBtn">
+                                            <img src="images/projectadd_36_on.png" alt="">
+                                        </div>
+                                        <div class="projectWork_NameHeader_SetBtn">
+                                            <img src="images/ic_more_vert_white_24dp.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="projectWork_Header_newWorkBox">
+                                        <input type="text" placeholder="새 업무 타이틀">
+                                        <img src="images/member.png" class="addMemberBtn_newProject" alt="">
+                                        <img src="images/tag.png" alt="">
+                                        <img src="images/calender.png" class="dateOpenBtn" alt="">
+                                        <div>
+                                            <span class="newWork_cancelBtn">취소</span>
+                                            <span class="newWork_cancelBtn">만들기</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projectWork_Header_inforText">
+                                        <p>1/3개 업무에 포인트가 있음</p>
+                                        <span>3포인트</span>
+                                    </div>
+                                </div>
+
+                                <div class="ui-state-default work_parent_Li">
+                                    <ul class="connectedSortable sortable1 work_childUl">
+                                        <li class="ui-state-default work_childLi" style="background-color:#a0744c;">
+                                            <div class="work_colorWrap">
+                                                <!-- 태그 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__tagBox">
+                                                    <span style="background-color: #a876cc">review</span>
+                                                    <span style="background-color: #ffb024">this-is-a-tag</span>
+                                                    <span style="background-color: #4882ab">important</span>
+                                                </div>
+
+                                                <!-- 사진첨부 박스 -->
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__fileBox">
+                                                    <img class="imagePopupBtn" src="https://www.w3schools.com/css/lights600x400.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="ui-state-default work_childLi" style="background-color:#a0744c;">
+                                            <div class="work_colorWrap">
+
+                                                <div class="projectWorkDiv__conBox projectWorkDiv__timeBox">
+                                                    <img src="images/time.png" alt="">
+                                                    <span>01시간 00분</span>
+
+                                                    <ul>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                        <li><img src="https://s-media-cache-ak0.pinimg.com/564x/cd/87/43/cd8743d9d21e5a0dcb800184c8555b10.jpg" title="" class="projectWorkDiv__timeBox_prof"></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--////////// 업무리스트 생성 ////////// -->
+                <div id="idTaskDiv_002">
+                    <div class="projectWork_Header projectWork_addList">
+                        <div class="projectWork_Header_Name">
+                            <input type="text" placeholder="업무리스트 추가" value="">
+                            <div class="">
+                                <img src="images/cancle.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+        //		$(document).ready(function() {
+        //
+        //			$(window).on('resize', function() {});
+        //
+        //			//Native javascript solution
+        //			window.onresize = function() {
+        //				if (window.innerWidth > 700) {
+        //					$(".projectWork_menuTop2_conterBox").css({"display" : "none"});
+        //					$(".projectWork_section").css({"padding-top" : "110px"});
+        //					console.log("here");
+        //				} else {
+        //					$(".projectWork_menuTop2_conterBox").css({"display" : "none"});
+        //					$(".projectWork_section").css({"padding-top" : "110px"});
+        //					console.log("not");
+        //				}
+        //			}
+        //		});
+
+        $(".hiddenMenuSet").click(function() {
+            if ($(".projectWork_menuTop2_conterBox").css("display") == "none") {
+                $(".projectWork_menuTop2_conterBox").css({
+                    "display": "block"
+                });
+                $(".projectWork_section").css({
+                    "padding-top": "145px"
+                });
+            } else {
+                $(".projectWork_menuTop2_conterBox").css({
+                    "display": "none"
+                });
+                $(".projectWork_section").css({
+                    "padding-top": "110px"
+                });
+            }
+        });
+
+        var curDown = false; //드래그 체크변수
+
+        $(document).ready(function() {
+            $(".menuDivLoad").load("menu.html", function() {
+                $(".menuLeft_top li:nth-child(4)").css({
+                    "opacity": "1",
+                    "background-color": "#154566"
+                });
+            }); //메뉴
+            $(".rightPanelLoad").load("panel.html"); //오른쪽 패널
+            $(".popupLoad").load("popup.html"); //팝업
+
+            //업데이트 할때마다 workParent_UlWrap 길이 변경
+            var index = $(".workParent_UlWrap").length;
+            var tw = (index * 300) + (index * 10);
+            $(".projectWork_sectionUl").css({
+                "width": tw
+            });
+        });
+
+        $(".projectWork_sectionUl").sortable({
+            revert: true,
+            change: function(event, ui) {
+                curDown = false; //변경중에는 드래그 비활성화
+            },
+            stop: function(event, ui) {
+                curDown = false; //정지후에는 드래그 비활성화
+            }
+        });
+
+        $(".connectedSortable").sortable({
+            revert: true,
+            placeholder: "sortable-placeholder",
+            forcePlaceholderSize: true,
+            connectWith: ".connectedSortable",
+            change: function(event, ui) {
+                curDown = false; //정지후에는 드래그 비활성화
+                $(".workParent_UlWrap_ul").css({
+                    "overflow-y": "initial"
+                }); //sortable중에는 스크롤 없애기
+                pelClickChk = false; //클릭이벤트 막음
+            },
+            stop: function(event, ui) {
+                curDown = false; //정지후에는 드래그 비활성화
+                $(".workParent_UlWrap_ul").css({
+                    "overflow-y": "auto"
+                }); //정지하면 스크롤 보이기
+                pelClickChk = true; //클릭이벤트 막음
+            }
+        });
+
+        //가로 스크롤 드래그
+        $(function() {
+            var liClick = false; //업무아이템 클릭하거나 마우스 오버했을때 변수
+            var curYPos = 0;
+            var curXPos = 0;
+
+            $(".projectWork_section").mousemove(function(m) {
+                if (curDown === true) {
+                    //$(window).scrollTop($(window).scrollTop() + (curYPos - m.pageY));
+                    if (liClick == false) { //업무아이템 비활성화일때
+                        $(window).scrollLeft($(window).scrollLeft() + (curXPos - m.pageX));
+                        console.log("move");
+                    }
+                }
+            });
+
+            //업무리스트
+            $(".work_childLi").mousedown(function() {
+                curDown = false;
+                liClick = true;
+            });
+
+            $(".work_childLi").mouseup(function() {
+                curDown = false;
+                liClick = false;
+            });
+
+            //업무리스트 아이템
+            $(".workParent_UlWrap").mousedown(function() {
+                curDown = false;
+                liClick = true;
+            });
+
+            $(".workParent_UlWrap").mouseup(function() {
+                curDown = false;
+                liClick = false;
+            });
+
+            $(window).mousedown(function(m) {
+                curDown = true;
+                curXPos = m.pageX;
+            });
+
+            $(window).mouseup(function() {
+                curDown = false;
+            });
+
+            $(window).click(function() {
+                curDown = false;
+            });
+
+            $(window).dblclick(function() {
+                curDown = false;
+            });
+
+            $(window).mouseenter(function() {
+                curDown = false;
+            });
+
+            $(".workParent_Ul .work_parent_Li").click(function() {
+                curDown = false;
+            });
+        });
+
+
+        //업무리스트 새업무 추가버튼 (토글)
+        $(".projectWork_NameHeader_AddBtn").click(function() {
+            var newWorkBox = $(this).parent().parent(".projectWork_Header").children(".projectWork_Header_newWorkBox");
+            var wrap = $(this).parent().parent().parent().children(".projectWork_Div");
+            var img = $(this).children("img");
+
+            if ($(newWorkBox).css("display") == "none") {
+                Work_NewAdd(this, true, newWorkBox, wrap, img);
+            } else {
+                Work_NewAdd(this, false, newWorkBox, wrap, img);
+            }
+        });
+
+    </script>
+</body>
+
+</html>
